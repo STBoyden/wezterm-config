@@ -1,4 +1,6 @@
 local wezterm = require("wezterm")
+local mappings = require("mappings")
+
 local config = {}
 
 if wezterm.config_builder then
@@ -7,7 +9,10 @@ end
 
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
-config.font_size = 14.0
+config.font_size = 13.0
+
+config.disable_default_key_bindings = true
+config.keys = mappings
 
 config.default_prog = { "/var/home/sboyden/.cargo/bin/nu" }
 config.color_scheme = "carbonfox"
