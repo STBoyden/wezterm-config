@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 
 local mappings = {
-	-- debug bindings
+	-- region: debug bindings
 	{
 		key = "P",
 		mods = "CTRL|SHIFT",
@@ -17,8 +17,9 @@ local mappings = {
 		mods = "CTRL|SHIFT",
 		action = wezterm.action.ReloadConfiguration,
 	},
+	-- endregion
 
-	-- tabs configuration and navigation
+	-- region: tabs configuration and navigation
 	{
 		key = "t",
 		mods = "CTRL|SHIFT",
@@ -44,8 +45,9 @@ local mappings = {
 		mods = "CTRL|ALT",
 		action = wezterm.action({ ActivateTabRelative = 1 }),
 	},
+	-- endregion
 
-	-- pane configuration, navigation, and resizing
+	-- region: pane configuration, navigation, and resizing
 	{
 		key = "\\",
 		mods = "CTRL",
@@ -101,8 +103,9 @@ local mappings = {
 		mods = "CTRL",
 		action = wezterm.action.PaneSelect,
 	},
+	-- endregion
 
-	-- miscellaneous bindings
+	-- region: miscellaneous bindings
 	{
 		key = "/",
 		mods = "CTRL",
@@ -113,8 +116,9 @@ local mappings = {
 		mods = "CTRL",
 		action = wezterm.action.CharSelect,
 	},
+	-- endregion
 
-	-- clipboard bindings
+	-- region: clipboard bindings
 	{
 		key = "c",
 		mods = "CTRL|SHIFT",
@@ -125,6 +129,7 @@ local mappings = {
 		mods = "CTRL|SHIFT",
 		action = wezterm.action({ PasteFrom = "Clipboard" }),
 	},
+	-- endregion
 }
 
 return mappings
