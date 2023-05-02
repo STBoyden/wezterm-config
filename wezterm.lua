@@ -1,5 +1,8 @@
 local wezterm = require("wezterm")
+
 local mappings = require("mappings")
+local styles = require("style")
+local _tab_bar = require("tab_bar")
 
 local config = {}
 
@@ -10,7 +13,10 @@ end
 config = {
 	use_fancy_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
-	font_size = 13.0,
+	font_size = 16.0,
+	font = wezterm.font("SFMono Nerd Font", { weight = "Medium" }),
+	default_cursor_style = "BlinkingUnderline",
+	detect_password_input = true,
 	disable_default_key_bindings = true,
 	keys = mappings,
 	default_prog = { "/var/home/sboyden/.cargo/bin/nu" },
@@ -25,10 +31,8 @@ config = {
 		top = 0,
 		bottom = 0,
 	},
-	window_frame = {
-		active_titlebar_bg = "#161616",
-		button_bg = "#161616",
-	},
+	tab_max_width = 24,
+	window_frame = styles.window_frame,
 }
 
 return config
