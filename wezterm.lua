@@ -14,7 +14,7 @@ config = {
 	use_fancy_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
 	font_size = 16.0,
-	font = wezterm.font("SFMono Nerd Font", { weight = "Medium" }),
+	font = wezterm.font("IntelOne Mono", { weight = "Medium" }),
 	default_cursor_style = "BlinkingUnderline",
 	detect_password_input = true,
 	disable_default_key_bindings = true,
