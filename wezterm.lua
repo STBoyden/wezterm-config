@@ -13,13 +13,13 @@ end
 config = {
 	use_fancy_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
-	font_size = 16.0,
-	font = wezterm.font("IntelOne Mono", { weight = "Medium" }),
+	font_size = 12.0,
+	font = wezterm.font("IntelOneMono Nerd Font", { weight = "Medium" }),
 	default_cursor_style = "BlinkingUnderline",
 	detect_password_input = true,
 	disable_default_key_bindings = true,
 	keys = mappings,
-	default_prog = { "/var/home/sboyden/.cargo/bin/nu" },
+	default_prog = { "/bin/fish" },
 	warn_about_missing_glyphs = false,
 	-- appearance configuration
 	color_scheme = "carbonfox",
