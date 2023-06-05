@@ -2,12 +2,20 @@ local wezterm = require("wezterm")
 
 local mappings = require("mappings")
 local styles = require("style")
-local _tab_bar = require("tab_bar")
+-- local _tab_bar = require("tab_bar")
 
 local config = {}
 
 if wezterm.config_builder then
 	config = wezterm.config_builder()
+end
+
+local function theme(appearance)
+	if appearance:find("Dark") then
+		return "Catppuccin Frappe"
+	else
+		return "Catppuccin Latte"
+	end
 end
 
 config = {
@@ -22,7 +30,7 @@ config = {
 	default_prog = { "/bin/fish" },
 	warn_about_missing_glyphs = false,
 	-- appearance configuration
-	color_scheme = "carbonfox",
+	color_scheme = theme(wezterm.gui.get_appearance()),
 	initial_cols = 120,
 	initial_rows = 30,
 	window_padding = {
@@ -33,6 +41,7 @@ config = {
 	},
 	tab_max_width = 24,
 	window_frame = styles.window_frame,
+	window_background_opacity = 0.9,
 }
 
 return config
