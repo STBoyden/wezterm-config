@@ -41,7 +41,7 @@ config = {
 	},
 	tab_max_width = 24,
 	window_frame = styles.window_frame,
-	window_background_opacity = 0.9,
+	window_background_opacity = 1.0,
 }
 
 return config
