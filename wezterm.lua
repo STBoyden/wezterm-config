@@ -10,14 +10,6 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-local function theme(appearance)
-	if appearance:find("Dark") then
-		return "Catppuccin Frappe"
-	else
-		return "Catppuccin Latte"
-	end
-end
-
 config = {
 	use_fancy_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
@@ -30,9 +22,12 @@ config = {
 	default_prog = { "/bin/fish" },
 	warn_about_missing_glyphs = false,
 	-- appearance configuration
-	color_scheme = theme(wezterm.gui.get_appearance()),
+	color_scheme = "Catppuccin Frappe",
 	initial_cols = 120,
 	initial_rows = 30,
+	colors = {
+		background = "#292c3c",
+	},
 	window_padding = {
 		left = 0,
 		right = 0,
