@@ -13,8 +13,8 @@ end
 config = {
 	use_fancy_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
-	font_size = 12.0,
-	font = wezterm.font("IntelOneMono Nerd Font", { weight = "Medium" }),
+	font_size = 13.0,
+	font = wezterm.font("FantasqueSansM Nerd Font", { weight = "Regular" }),
 	default_cursor_style = "BlinkingBar",
 	detect_password_input = true,
 	disable_default_key_bindings = true,
