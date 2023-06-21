@@ -15,7 +15,7 @@ config = {
 	hide_tab_bar_if_only_one_tab = true,
 	font_size = 12.0,
 	font = wezterm.font("IntelOneMono Nerd Font", { weight = "Medium" }),
-	default_cursor_style = "BlinkingUnderline",
+	default_cursor_style = "BlinkingBar",
 	detect_password_input = true,
 	disable_default_key_bindings = true,
 	keys = mappings,
