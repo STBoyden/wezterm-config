@@ -14,20 +14,17 @@ config = {
 	use_fancy_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
 	font_size = 15.0,
-	font = wezterm.font("UbuntuMono Nerd Font", { weight = "Regular" }),
+	font = wezterm.font("Andale Mono", { weight = "Regular" }),
 	default_cursor_style = "BlinkingBar",
 	detect_password_input = true,
 	disable_default_key_bindings = true,
 	keys = mappings,
-	default_prog = { "/bin/fish" },
+	default_prog = { "/bin/zsh" },
 	warn_about_missing_glyphs = false,
 	-- appearance configuration
-	color_scheme = "Catppuccin Frappe",
+	color_scheme = "Brogrammer",
 	initial_cols = 120,
 	initial_rows = 30,
-	colors = {
-		background = "#292c3c",
-	},
 	window_padding = {
 		left = 0,
 		right = 0,
